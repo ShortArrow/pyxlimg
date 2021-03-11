@@ -12,3 +12,10 @@ def test_openbook():
     TargetBook:xlimg.ImageBook = xlimg.ImageBook()
     TargetBook.open(TestBookName)
     assert TargetBook.name == TestBookName
+
+
+def test_count_sheets():
+    TestBookName = "./tests/testdata/TestBook.xlsx"
+    TargetBook:xlimg.ImageBook = xlimg.ImageBook()
+    TargetBook.open(TestBookName)
+    assert len(TargetBook.Sheets) == 3
