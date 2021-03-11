@@ -1,3 +1,5 @@
+from PIL import Image
+import PIL
 import pytest
 from pyxlimg import xlimg
 from time import time
@@ -22,11 +24,11 @@ def test_openspeed():
     assert spentTime <= 0.2
 
 
-def test_openbook(TargetBook):
+def test_openbook(TargetBook: xlimg.ImageBook):
     assert TargetBook.name == TestBookName
 
 
-def test_count_sheets(TargetBook):
+def test_count_sheets(TargetBook: xlimg.ImageBook):
     assert len(TargetBook.Sheets) == 3
 
 
@@ -34,15 +36,18 @@ imagesCountData = [(0, 0), (1, 2), (2, 2)]
 
 
 @pytest.mark.parametrize("index,count", imagesCountData)
-def test_count_images(TargetBook, index, count):
-    thisTarget: xlimg.ImageBook = TargetBook
-    assert len(thisTarget.Sheets[index].Pictures) == count
+def test_count_images(TargetBook: xlimg.ImageBook, index, count):
+    assert len(TargetBook.Sheets[index].Pictures) == count
 
 
 SheetNameData = [(0, "Marshmallow"), (1, "containSVG"), (2, "PolkaDot")]
 
 
 @pytest.mark.parametrize("index,sheetname", SheetNameData)
-def test_get_sheetname(TargetBook, index, sheetname):
-    thisTarget: xlimg.ImageBook = TargetBook
-    assert thisTarget.Sheets[index].displayName == sheetname
+def test_get_sheetname(TargetBook: xlimg.ImageBook, index, sheetname):
+    assert TargetBook.Sheets[index].displayName == sheetname
+
+
+def test_get_image(TargetBook: xlimg.ImageBook):
+    targetImage: Image.Image = TargetBook.Sheets[1].Pictures[0].Image()
+    assert isinstance(targetImage, Image.Image)
