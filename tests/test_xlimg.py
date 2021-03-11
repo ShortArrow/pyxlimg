@@ -10,6 +10,5 @@ from pyxlimg import xlimg
 def test_openbook():
     TestBookName = "./tests/testdata/TestBook.xlsx"
     TargetBook:xlimg.ImageBook = xlimg.ImageBook()
-    print(">>>>>>>>>>>"+os.getcwd())
     TargetBook.open(TestBookName)
     assert TargetBook.name == TestBookName
