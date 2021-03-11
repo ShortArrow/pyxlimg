@@ -1,5 +1,6 @@
 import pytest
 from pyxlimg import xlimg
+from time import time
 
 
 TestBookName = "./tests/testdata/TestBook.xlsx"
@@ -10,6 +11,15 @@ def TargetBook() -> xlimg.ImageBook:
     theBook: xlimg.ImageBook = xlimg.ImageBook()
     theBook.open(TestBookName)
     yield theBook
+
+
+def test_openspeed():
+    startTime = time()
+    theBook: xlimg.ImageBook = xlimg.ImageBook()
+    theBook.open(TestBookName)
+    finishTime = time()
+    spentTime = finishTime - startTime
+    assert spentTime <= 0.2
 
 
 def test_openbook(TargetBook):
