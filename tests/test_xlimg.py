@@ -1,4 +1,4 @@
-# import os
+import os
 # import sys
 
 # sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -8,6 +8,8 @@ from pyxlimg import xlimg
 
 
 def test_openbook():
-    TargetBook:xlimg.ImageBook = xlimg.ImageBook
-    TargetBook.open("testdata/TestBook.xlsx")
-    assert TargetBook.name == "TestBook"
+    TestBookName = "./tests/testdata/TestBook.xlsx"
+    TargetBook:xlimg.ImageBook = xlimg.ImageBook()
+    print(">>>>>>>>>>>"+os.getcwd())
+    TargetBook.open(TestBookName)
+    assert TargetBook.name == TestBookName

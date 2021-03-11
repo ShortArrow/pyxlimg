@@ -116,6 +116,7 @@ class Sheet(Element):
 class ImageBook(Element):
     def __init__(self) -> None:
         super().__init__(name="")
+        self.zf: zipfile.ZipFile
         self.Sheets: list[Sheet] = []
 
     def open(self, fileName: str) -> None:
