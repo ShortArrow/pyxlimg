@@ -20,6 +20,15 @@ def test_count_sheets(TargetBook):
     assert len(TargetBook.Sheets) == 3
 
 
-def test_count_images1(TargetBook):
+imagesCountData = [(0, 0), (1, 2), (2, 1)]
+
+
+@pytest.mark.parametrize("index,count", imagesCountData)
+def test_count_images(TargetBook, index, count):
     thisTarget: xlimg.ImageBook = TargetBook
-    assert len(thisTarget.Sheets[1].Pictures)
+    assert len(thisTarget.Sheets[index].Pictures) == count
+
+
+def test_get_sheetname(TargetBook):
+    thisTarget: xlimg.ImageBook = TargetBook
+    assert thisTarget.Sheets[0].displayName == "Marshmallow"
