@@ -1,4 +1,3 @@
-import os
 import pytest
 from pyxlimg import xlimg
 
