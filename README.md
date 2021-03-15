@@ -2,6 +2,10 @@
 
 Pyxlimg is for extracting images from xlsx. It has a high affinity with other libraries. This is because you can treat the image as an instance of Pillow.Image. I hope it will be incorporated into openpyxl and pylightxl in the future.
 
+# Concept
+
+Images are difficult to handle with xlwings, openpyxl, and pylightxl. Especially linter and type annotation are difficult. Complement these. And the goal is to make it easier to do OCR etc. using xlsx in Python.
+
 # Install
 
 Recommended to install using pip.
