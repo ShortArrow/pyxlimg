@@ -1,5 +1,4 @@
 from PIL import Image
-import PIL
 import pytest
 from pyxlimg import xlimg
 from time import time

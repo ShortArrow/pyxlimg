@@ -18,7 +18,6 @@ pip install pyxlimg
 
 ```py
 from PIL import Image
-import PIL
 from pyxlimg import xlimg
 
 TestBookName = "./your-test-data/TestBook.xlsx"
