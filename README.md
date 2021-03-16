@@ -40,3 +40,7 @@ If it is supported by Pillow, it can be supported. If the original image is in a
 
 ## What kind of library is this supposed to be used with?
 For example, `Tesseract OCR`, `pylightxl`, `openpyxl`, `matplotlib`. It is also ideal for matching with other `pillow` related libraries.
+
+# How to Contribute
+
+Please do a git clone and pull request. The version control tool used in this repository is poetry.
