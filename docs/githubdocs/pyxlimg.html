@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>pyxlimg package &mdash; pyxlimg 0.1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pyxlimg
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">pyxlimg package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-pyxlimg.xlimg">pyxlimg.xlimg module</a></li>
+<li><a class="reference internal" href="#module-pyxlimg">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyxlimg</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>pyxlimg package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/pyxlimg.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pyxlimg-package">
+<h1>pyxlimg package<a class="headerlink" href="#pyxlimg-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-pyxlimg.xlimg">
+<span id="pyxlimg-xlimg-module"></span><h2>pyxlimg.xlimg module<a class="headerlink" href="#module-pyxlimg.xlimg" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="pyxlimg.xlimg.Element">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyxlimg.xlimg.</span></code><code class="sig-name descname"><span class="pre">Element</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyxlimg.xlimg.Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.drawingFolder">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">drawingFolder</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.drawingFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.drawingfileExtension">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">drawingfileExtension</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.drawingfileExtension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.mediaFolder">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">mediaFolder</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.mediaFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.relayFolder">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">relayFolder</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.relayFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.relayfileExtension">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">relayfileExtension</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.relayfileExtension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.sheetFolder">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sheetFolder</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.sheetFolder" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.sheetfileExtension">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">sheetfileExtension</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.sheetfileExtension" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Element.wookbookinfo">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">wookbookinfo</span></code><a class="headerlink" href="#pyxlimg.xlimg.Element.wookbookinfo" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyxlimg.xlimg.ImageBook">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyxlimg.xlimg.</span></code><code class="sig-name descname"><span class="pre">ImageBook</span></code><a class="headerlink" href="#pyxlimg.xlimg.ImageBook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyxlimg.xlimg.Element</span></code></a></p>
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getDisplayNames">
+<code class="sig-name descname"><span class="pre">getDisplayNames</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getDisplayNames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getImageList">
+<code class="sig-name descname"><span class="pre">getImageList</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getImageList" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getImagePathsFromRelay">
+<code class="sig-name descname"><span class="pre">getImagePathsFromRelay</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getImagePathsFromRelay" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getImagePathsFromSheet">
+<code class="sig-name descname"><span class="pre">getImagePathsFromSheet</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getImagePathsFromSheet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getRelayPathFromSheetName">
+<code class="sig-name descname"><span class="pre">getRelayPathFromSheetName</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheetname</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getRelayPathFromSheetName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getRelayPaths">
+<code class="sig-name descname"><span class="pre">getRelayPaths</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getRelayPaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getSheetNameFromSheetPath">
+<code class="sig-name descname"><span class="pre">getSheetNameFromSheetPath</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getSheetNameFromSheetPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getSheetNames">
+<code class="sig-name descname"><span class="pre">getSheetNames</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getSheetNames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.getSheetPaths">
+<code class="sig-name descname"><span class="pre">getSheetPaths</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.getSheetPaths" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="pyxlimg.xlimg.ImageBook.open">
+<code class="sig-name descname"><span class="pre">open</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fileName</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#pyxlimg.xlimg.ImageBook.open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyxlimg.xlimg.Picture">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyxlimg.xlimg.</span></code><code class="sig-name descname"><span class="pre">Picture</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyxlimg.xlimg.Picture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyxlimg.xlimg.Element</span></code></a></p>
+<dl class="py method">
+<dt id="pyxlimg.xlimg.Picture.Image">
+<code class="sig-name descname"><span class="pre">Image</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">PIL.Image.Image</span><a class="headerlink" href="#pyxlimg.xlimg.Picture.Image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="pyxlimg.xlimg.Sheet">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">pyxlimg.xlimg.</span></code><code class="sig-name descname"><span class="pre">Sheet</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">displayName</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><span class="pre">pyxlimg.xlimg.Element</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyxlimg.xlimg.Sheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pyxlimg.xlimg.Element" title="pyxlimg.xlimg.Element"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyxlimg.xlimg.Element</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pyxlimg">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyxlimg" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, shortarrow.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
