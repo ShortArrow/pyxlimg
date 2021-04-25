@@ -31,6 +31,8 @@ if __name__ == "__main__":
     print("First sheet name is '" + TargetBook.Sheets[0].displayName + "'.")
     print("First sheet has " + len(TargetBook.Sheets[0].Pictures + " pictures.")
     TargetBook.Sheets[1].Pictures[0].Image().show() # Show you the Image
+    DisplayImage: Image = TargetBook.Sheets[1].Pictures[0].Image()
+    DisplayImage.show() # Show you the Image too.
 ```
 
 # FAQ
