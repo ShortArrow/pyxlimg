@@ -1,3 +1,6 @@
 .\.venv\Scripts\activate
 sphinx-apidoc -f -o ./docs ./pyxlimg
 sphinx-build -b singlehtml ./docs ./docs/_build
+
+
+poetry export -f requirements.txt > requirements.txt
