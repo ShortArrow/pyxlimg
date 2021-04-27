@@ -50,3 +50,7 @@ def test_get_sheetname(TargetBook: xlimg.ImageBook, index, sheetname):
 def test_get_image(TargetBook: xlimg.ImageBook):
     targetImage: Image.Image = TargetBook.Sheets[1].Pictures[0].Image()
     assert isinstance(targetImage, Image.Image)
+
+
+if __name__ == "__main__":
+    pass
