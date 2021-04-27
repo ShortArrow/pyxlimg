@@ -12,9 +12,9 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('..'))
-sys.path.insert(0, os.path.abspath('../pyxlimg/'))
-sys.path.insert(0, os.path.abspath('../pyxlimg/xlimg'))
+# sys.path.insert(0, os.path.abspath('..'))
+# sys.path.insert(0, os.path.abspath('../pyxlimg/'))
+# sys.path.insert(0, os.path.abspath('../pyxlimg/xlimg'))
 
 # -- Project information -----------------------------------------------------
 
