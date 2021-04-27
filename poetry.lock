@@ -444,8 +444,8 @@ brotli = ["brotlipy (>=0.6.0)"]
 
 [metadata]
 lock-version = "1.1"
-python-versions = "~3.8.0"
-content-hash = "48d314462316cd25479ed953410b552e1560549dd88114c5302a1b03db0fd101"
+python-versions = "^3.8"
+content-hash = "497cd009c67695580e4e8b7e392115a184433e67715846b4c34254950b8e22e8"
 
 [metadata.files]
 alabaster = [
