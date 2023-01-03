@@ -43,7 +43,7 @@ In this way, you can easily assign images to variable.
 # FAQ
 
 ## What image format does this support?
-If it is supported by Pillow, it can be supported. If the original image is in a commonly used format such as png, jpg, bmp when pasted or inserted into xlsx.
+If it is supported by [Pillow](https://pypi.org/project/Pillow/), it can be supported. If the original image is in a commonly used format such as png, jpg, bmp when pasted or inserted into xlsx.
 
 ## What kind of library is this supposed to be used with?
 For example, `Tesseract OCR`, `pylightxl`, `openpyxl`, `matplotlib`. It is also ideal for matching with other `pillow` related libraries.
