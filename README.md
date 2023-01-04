@@ -51,3 +51,21 @@ For example, `Tesseract OCR`, `pylightxl`, `openpyxl`, `matplotlib`. It is also 
 # How to Contribute
 
 Please do a git clone and pull request. The version control tool used in this repository is poetry.
+
+## Build
+
+How to build package.
+
+```
+poetry install
+poetry shell
+poetry build
+```
+
+How to build sphinx docs.
+
+```
+poetry export --with dev -f requirements.txt > requirements.txt
+sphinx-apidoc -f -o ./docs ./pyxlimg
+sphinx-build -b html ./docs ./docs/_build
+```
