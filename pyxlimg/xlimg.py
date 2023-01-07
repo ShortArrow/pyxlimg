@@ -1,17 +1,27 @@
-from types import DynamicClassAttribute
+from __future__ import annotations
+from typing import TYPE_CHECKING
+from typing import Union
 import zipfile
 from PIL import Image
 import io
 import re
 
+if TYPE_CHECKING:
+    from xlimg import Element
+
 
 class Element:
     def __init__(
-        self, name: str, parent: "Element" = None, root: "Element" = None
+        self,
+        name: str,
+        parent: Element = None,
+        root: Element = None,
     ) -> None:
         self.name = name
-        self.parent = parent
-        self.root = root
+        if parent != None:
+            self.parent = parent
+        if root != None:
+            self.root = root
 
     @property
     def sheetFolder(self) -> str:
@@ -82,7 +92,7 @@ class Sheet(Element):
         finalindex = str(relsdata).rfind(".", startindex, finalindex)
         self.drawingfilename = relsdata[startindex:finalindex]
         res: list[Picture] = []
-        buf: Picture = None
+        buf: Union[Picture, None] = None
         while True:
             buf = self.__Picture(len(res))
             if buf.name == "":
