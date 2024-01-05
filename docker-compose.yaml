@@ -1,0 +1,45 @@
+version: '3'
+services:
+  dev:
+    image: mcr.microsoft.com/vscode/devcontainers/python:3.10
+    tty: true 
+    volumes:
+      - .:/home/node:ro
+    command: ["/home/node/entrypoint.sh"]
+  py311:
+    image: python:3.11
+    volumes:
+      - .:/home/node
+      - py311_pip:/home/node/.cache/pip
+      - py311_test:/home/node/.pytest_cache/
+    command: ["/home/node/entrypoint.sh"]
+  py310:
+    image: python:3.10
+    volumes:
+      - .:/home/node
+      - py310_pip:/home/node/.cache/pip
+      - py310_test:/home/node/.pytest_cache/
+    command: ["/home/node/entrypoint.sh"]
+  py309:
+    image: python:3.9
+    volumes:
+      - .:/home/node
+      - py309_pip:/home/node/.cache/pip
+      - py309_test:/home/node/.pytest_cache/
+    command: ["/home/node/entrypoint.sh"]
+  py308:
+    image: python:3.8
+    volumes:
+      - .:/home/node
+      - py308_pip:/home/node/.cache/pip
+      - py308_test:/home/node/.pytest_cache/
+    command: ["/home/node/entrypoint.sh"]
+volumes:
+  py311_pip:
+  py311_test:
+  py310_pip:
+  py310_test:
+  py309_pip:
+  py309_test:
+  py308_pip:
+  py308_test:
