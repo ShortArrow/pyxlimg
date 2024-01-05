@@ -2,6 +2,12 @@
 
 Pyxlimg is for extracting images from xlsx. It has a high affinity with other libraries. This is because you can treat the image as an instance of Pillow.Image.
 
+![PyPI - License](https://img.shields.io/pypi/l/pyxlimg)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/pyxlimg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyxlimg)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/pyxlimg)
+![PyPI - Version](https://img.shields.io/pypi/v/pyxlimg)
+
 ## Concept
 
 Images are difficult to handle with xlwings, openpyxl, and pylightxl. Especially linter and type annotation are difficult. Complement these. And the goal is to make it easier to do OCR etc. using xlsx in Python.
@@ -77,4 +83,11 @@ poetry install
 poetry shell
 pytest
 poetry build
+```
+
+Docker
+
+```bash
+docker compose up -d --build
+docker compose logs -f
 ```
