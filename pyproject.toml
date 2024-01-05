@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyxlimg"
-version = "0.1.5"
+version = "0.1.6"
 description = "Image Extractor for XLSX files"
 authors = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
 maintainers = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
@@ -12,7 +12,7 @@ documentation = "https://pyxlimg.readthedocs.io/en/latest/pyxlimg.html"
 keywords = ["xlsx", "image", "PIL", "Pillow", "Excel"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 Pillow = "^10.0"
 
 [tool.poetry.group.dev.dependencies]
