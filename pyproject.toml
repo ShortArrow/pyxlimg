@@ -1,10 +1,10 @@
 [tool.poetry]
 name = "pyxlimg"
-version = "0.1.2"
+version = "0.1.4"
 description = "Image Extractor for XLSX files"
 authors = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
 maintainers = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
-license = "GPL-3-or-later"
+license = "MIT"
 readme = "README.md"
 repository = "https://github.com/shortarrow/pyxlimg"
 homepage = "https://shortarrow.jp"
