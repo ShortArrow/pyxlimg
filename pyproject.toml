@@ -2,10 +2,14 @@
 name = "pyxlimg"
 version = "0.1.1"
 description = "Image Extractor for XLSX files"
-authors = ["ShortArrow <bamboogeneral@live.jp>"]
+authors = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
+maintainers = ["ShortArrow <bamboogeneral@shortarrow.jp>"]
 license = "GPL3"
 readme = "README.md"
 repository = "https://github.com/shortarrow/pyxlimg"
+homepage = "https://shortarrow.jp"
+documentation = "https://pyxlimg.readthedocs.io/en/latest/pyxlimg.html"
+keywords = ["xlsx", "image", "PIL", "Pillow", "Excel"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
