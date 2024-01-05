@@ -69,7 +69,6 @@ poetry build
 How to build sphinx docs.
 
 ```bash
-poetry export --with dev -f requirements.txt > requirements.txt
 sphinx-apidoc -f -o ./docs ./pyxlimg
 sphinx-build -b html ./docs ./docs/_build
 ```
